@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Lyons' Den</title>
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="restaurant_name">
+        <h1>Lyons' Den</h1>
+        </div>
+      <div id="logo">
+        <img class="logo" src="img/restlogo.png" alt="restaurant logo">
+      </div>
+    </header>
+
+    <main>
+      <div id="carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="img/SFplate1.jpg" alt="soul food plate"></div>
+          <div><img src="img/SFplate2.jpg" alt="carryout of soul food"></div>
+          <div><img src="img/SFsides3.jpg" alt="traditional soul food"></div>
+          <div><img src="img/SFsides1.jpg" alt="soul food sides"></div>
+          <div><img src="img/SFBP.jpg" alt="banana pudding"></div>
+        </div>
+      </div>
+
+      <div id="hours">
+
+
+        <table>
+          <caption>Restaurant Hours</caption>
+            <tr>
+              <th>Days</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>10 A.M.- 8 P.M.</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10 A.M.- 8 P.M.</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10 A.M.- 8 P.M.</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>10 A.M.- 8 P.M.</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10 A.M.- 10 P.M.</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>9 A.M.- 10 P.M.</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>9 A.M.- 8 P.M.</td>
+            </tr>
+        </table>
+
+      </div>
+      <div id="menu">Menu</div>
+      <div id="map">Map
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.092664530749!2d-82.29630578478859!3d33.91301458064412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f7f4acdb0051bb%3A0x242e831c1d63f4ca!2s108+N+Main+St%2C+McCormick%2C+SC+29835!5e0!3m2!1sen!2sus!4v1518451883507" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div id="contact">
+        Contact Us
+        <br>
+        Email: TheLyonsDen@gmail.com
+        <br>
+        Phone Number: (864)-602-2565
+      </div>
+      <div id="media">Media</div>
+      <div id="credits">
+        By: Kody L.
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay:true,
+          autoplayTimeout:2500,
+          autoplayHoverPause:true
+      })
+    });
+  </script>
+
+</body>
+</html>
