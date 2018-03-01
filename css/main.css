@@ -11,15 +11,22 @@
   src: url("../fonts/BuffaloInline2Grunge.ttf");
 }
 
+@font-face {
+  font-family: "Sable";
+  src: url("../fonts/sable.ttf");
+}
+
 /*********** Begin Layout Styles ***********/
 body{
   background-image: url("../img/aleathia-browns-color-n-time1.png");
 }
+
 div.container {
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px; /* disable this line if you want full-width layouts */
+  padding: 5px 0;
 }
 
 header, main, footer {
@@ -29,6 +36,7 @@ header, main, footer {
 
 /* phones (base layout is mobile-first) */
 header {
+  align-items: center;
   border: 3px solid #990000; /* disable this line once layout works */
   display: grid;
   grid-column-gap: 15px;
@@ -53,7 +61,7 @@ main {
 }
 
 footer {
-  border: 3px solid #000099; /* disable this line once layout works */
+  border: 3px solid #990000; /* disable this line once layout works */
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -118,7 +126,7 @@ footer {
 
 @media (max-width: 599px) {
   .logo {
-    width: 30%;
+    width: 60%;
   }
 }
 div {
@@ -175,12 +183,22 @@ div#credits {
 /* Headings */
 h1 {
   font-family: "Buffalo";
-  font-size: 70px;
+  font-size: 60px;
   margin: 0;
+  color: #FF6600;
+}
+
+@media (min-width: 600px) {
+    h1 {
+      font-size: 120px;
+    }
 }
 
 h2 {
-
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #293E96;
+  font-family: 'Cinzel', serif;
 }
 
 h3 {
@@ -222,7 +240,7 @@ li {
 table {
   border-collapse: collapse;
   border: 1px solid black;
-  max-width: 100%;
+  width: 100%;
 }
 
 caption {
@@ -246,8 +264,15 @@ td {
 
 /* images */
 img {
+  max-width: 100%;
+}
+
+img.social {
+
+  max-width: 100%;
 
 }
+
 
 iframe {
   max-width: 100%;
