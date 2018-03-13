@@ -89,6 +89,14 @@ footer {
       "map menu hours"
   }
 
+  main.menu-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "page-name page-name"
+      "breakfast lunch"
+      "dinner dinner";
+  }
+
   footer {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -120,6 +128,14 @@ footer {
     grid-template-areas:
       "carousel carousel carousel"
       "hours menu map"
+  }
+
+  main.menu-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "page-name page-name"
+    "breakfast lunch"
+    "dinner dinner";
   }
 
   footer {
@@ -241,7 +257,9 @@ ol {
 }
 
 ul {
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
