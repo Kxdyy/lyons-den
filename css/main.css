@@ -72,6 +72,16 @@ footer {
     "credits";
 }
 
+@media (max-width:599px) {
+  main.menu-page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "page-name"
+    "breakfast"
+    "lunch"
+    "dinner";
+  }
+}
 
 /* tablets and small laptops */
 @media (min-width: 600px) {
@@ -88,6 +98,7 @@ footer {
       "carousel carousel carousel"
       "map menu hours"
   }
+
 
   main.menu-page {
     grid-template-columns: 1fr 1fr;
